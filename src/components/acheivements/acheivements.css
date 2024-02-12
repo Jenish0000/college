@@ -1,0 +1,356 @@
+.ourAcheivementsContainer{
+    overflow: hidden;
+}
+.acheivementimageWrapper{
+    height: 120px;
+    width: 120px;
+}
+.acheivementlHeading{
+    margin-top: 2rem;
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108));
+    -webkit-text-fill-color: transparent; 
+    background-clip: border-box;
+    -webkit-background-clip: text; 
+}
+.acheivementlHeadingCenter{
+    height: 40px;
+    width:max-content;
+    background-color: #9A3B3B;
+    padding: 7px;
+    color: #fff;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    position: relative;
+}
+.leftsharpEdge{
+    position: absolute;
+    top: 0px;
+    left: -12px;
+        width: 0; 
+        height: 0; 
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent; 
+        border-right:15px solid grey; 
+ transform:rotate(225deg);
+}
+.rightsharpEdge{
+    position: absolute;
+    top: 0px;
+    right: -12px;
+        width: 0; 
+        height: 0; 
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent; 
+        border-right:15px solid grey; 
+ transform:rotate(315deg);
+}
+
+.acheivementImage{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.acheivementHeadingWrapperRight{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin:2rem 10px 0px 0px;
+    flex-direction: column;
+}
+.pastDivert{
+    margin:10px 1rem 0px 0px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.acheivementHeadingWrapperCenter{
+display: flex;
+align-items: center;
+justify-content: center;
+margin:3rem 0px 1rem 0px;
+}
+.acheivementOneWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    background-color:#fff;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    border-top: 3px solid tomato;
+    border-left: 3px solid tomato;
+}
+.nameofAcheiver{
+    color: #9A3B3B;
+    text-align: center;
+    margin-top: 10px;   
+}
+.startingAchivement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
+
+
+
+/* left achivement styling */
+.leftAcheivementWrapper{
+    margin-top: 2rem;
+}
+.wrapStartingLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.startingTextForLeftAcheivementContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 140px;
+   background-color:#872341;
+   color: #fff;
+   position: relative;
+}
+.startingTextForLeftAcheivementContent>p{
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+}
+.startingTextForLeftAcheivementContent>p::first-letter{
+    font-size: 30px;
+}
+.outlined{
+    position: absolute;
+    top: 5px;
+    width: 310px;
+    transform: rotate(5deg);
+    height: 130px;
+    border: 3px solid #fff;
+}
+.spaceBetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.acheivementlHeadingforBox{
+    width: 270px;
+}
+.acheivementlHeadingforBox{
+height: 40px;
+width:max-content;
+background-color: #9A3B3B;
+padding: 7px;
+color: #fff;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+position: relative;
+}
+.leftfacultytopperHead{
+    text-align: center;
+}
+.smallleftfacultytopperHead{
+    text-align: center;
+    padding: 1rem;
+    color:#872341;
+}
+.acheivementOneWrapperSmall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+.acheivementOneWrapperSmall{
+    width: 150px;
+    height: 150px;
+   background-color: #fff;
+   box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+   border-top: 3px solid tomato;
+   border-left: 3px solid tomato;
+   border-radius: 10px;
+}
+.acheivementimageWrapperSmall>.acheivementImageSmall{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+.nameofAcheiverSmall{
+    color: #9A3B3B;
+}
+.topperInSmall{
+text-align: center;
+}
+.adressSmall{
+text-align: center;
+}
+
+.flexed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.flexedRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.flexedWrapper{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+.leftAchivement{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+   gap: 1rem;
+   width:min-content;
+   margin:3rem 0px 0px 1rem;
+}
+.rightAchivement{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+   gap: 1rem;
+   width:min-content;
+   margin:3rem 0px 10px 0px;
+}
+
+
+
+
+.leftoverContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:1rem;
+}
+
+.closeButtonWrapper>.pastAcheivementCloseIcon{
+position:fixed;
+top: 40px;
+left: 10px;
+color: #fff;
+font-size: 4rem;
+cursor: pointer;
+}
+.acheivementlHeadingPast{
+    color: #fff;
+}
+.singleAcheivement{
+    margin-bottom: 2rem;
+}
+
+.acheivementOneWrapperSmallLast{
+   margin: 1rem 0px 1rem 0px;
+}
+.smallleftfacultytopperHeading{
+    margin-top: 1rem;
+}
+.pastAchivementsContainer{
+    display: none;
+}
+.pastAchivementsContainerShown{
+    display: block;
+    background-color: red;
+    z-index: 10000;
+    position: fixed; 
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: scroll;
+}
+.acheivementlHeadingforBoxpastAcheivement{
+    height: 40px;
+    width:max-content;
+    background-color: #9A3B3B;
+    padding: 7px;
+    color: #fff;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    position: relative;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1006px){
+    .flexedWrapper{
+        margin-top: 3rem;
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+    .flexedRight{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width:515px){
+    .acheivementOneWrapperSmall{
+        padding: 10px;
+    }
+    .acheivementOneWrapperSmall{
+        height: 130px;
+        width: 130px;
+    }
+    .acheivementimageWrapperSmall>.acheivementImageSmall{
+        height: 50px;
+        width: 50px;
+    }
+    .nameofAcheiverSmall{
+        text-align: center;
+        font-size: 12px;
+    }
+    .topperInSmall,.adressSmall{font-size: 10px;}
+}
+@media screen and (max-width:885px){
+    .startingAchivement{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:800px){
+    .leftoverContent{
+        flex-wrap:wrap-reverse;
+        gap: 1rem;
+    }
+}
+
+
+
+@media screen and (max-width:450px){
+.rightAchivement{
+display: grid;
+grid-template-columns: 2fr 2fr;
+}
+.leftAchivement{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+    .acheivementlHeadingCenter>h2{
+    padding:2px;
+    font-size: 17px;
+    }
+}
+

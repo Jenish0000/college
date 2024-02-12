@@ -1,0 +1,134 @@
+.parentForMessage{
+    overflow: hidden;
+}
+.greetInMessageHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108));
+    -webkit-text-fill-color: transparent; 
+    background-clip: border-box;
+    -webkit-background-clip: text; 
+    padding: 4rem 0px 1rem 0px;
+}
+.parentForMessageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7rem 0px 0px 0px;
+}
+.messageContainerWrapper{
+    width: fit-content;
+    margin-top: 2rem;
+    padding: 1rem;
+     border: 3px solid tomato;
+    border-radius: 20px;
+}
+.messageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.smallProfileImage{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.messageheaderContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+   box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+   border-radius: 20px;
+}
+.messageProfiLeOne{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 1rem;
+cursor: pointer;
+}
+
+.messageContentHeader{
+    display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.fontBig::first-letter{
+font-size: 30px;
+}
+.nameAndPost{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+.messageContentWrapper{
+    margin-top: 1rem;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    width:500px;
+    height: 300px;
+    padding: 1rem;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-margin-top: 1rem;
+}
+.postOne{
+    margin-top: 1rem;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    padding: 1rem;
+    border-top-right-radius: 20px;
+}
+.messageTextWrappper>p{
+    text-align: justify;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-family: Georgia;
+    line-height:25px;
+}
+.postedBy>q{
+    text-align: center;
+    font-weight: 600;
+    color:#872341;
+}
+.postedBy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center; 
+    flex-direction: column;
+}
+.currentTime{
+    font-weight: 500;
+}
+
+@media screen and (max-width:565px){
+    .messageContainerWrapper{
+        width: 400px;
+    }
+    .messageContentWrapper{
+        width: 380px;
+    }
+    .messageTextWrappper>p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:422px){
+    .messageContainerWrapper{
+        width: 350px;
+    }
+    .messageContentWrapper{
+        width: 340px;
+    }
+    .smallbelow{
+        text-align: center;
+    font-size: 11px;
+    }
+}

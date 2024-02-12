@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}   
+
+.relativeWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+
+}
+
+
+.headerWrapper{
+    position: sticky;
+    top:0px;
+    left: 0;
+    width: 100%;
+  transition: 0.6s;
+  z-index: 1000;
+}
+
+.stickyHeader{
+    background-color: #fff;
+}
+
+
+.headerContainer{
+    position: relative;
+    z-index: 10000;
+}
+/* giving the anchor tag a class of href to style... */
+.href{
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    margin-left:35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.href::after {
+    content: "";
+    border-bottom: 3px solid rgba(255, 0, 0, 0.925);
+    border-radius: 5px;
+    display: block;
+    transition: 0.3s ease-in-out;
+    transform: translateX(0%) scale(0);
+}
+
+.href:hover::after {
+    transform: translateX(0%) scale(1);
+}
+
+.href:hover {
+    color: tomato;
+}
+.middleInformation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightInformation{
+    position: fixed;
+    right:20px;
+    top: 65px;
+}
+.stickyHeader>.headerContainer>.flexedHeader>.rightInformation{
+    top: 25px;
+}
+.headerlogo{
+    height: 70px;
+    width: 70px;
+    object-fit: contain; 
+}
+.headerContainer{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   gap: 5rem;
+   position: relative;
+   -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+   -moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+   box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+    color: #fff;
+    width: 100%;
+   height: 80px;  
+}
+.leftInformation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.stickyHeader>.headerContainer>.flexedHeader>.middleInformation>.showhrefsWrapper{
+   top: 8rem;
+}
+.showhrefsWrapper{
+    position: fixed; 
+    width: 100%; 
+   height: 100%;
+   top: 12rem;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    right: 0;
+    bottom: 0;
+    background-color:#fff; 
+    z-index: 2; 
+    cursor: pointer; 
+}
+.showhrefsWrapper::after{
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    transition: 0.3s ease-in-out;
+    background-color:#fff; 
+    z-index: 20000; 
+    cursor: pointer; 
+}
+.showhrefsWrapper>.links{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.showhrefsWrapper>.links>.href{
+    margin-top: 2rem;
+    color: #000;
+}
+.showhrefsWrapper>.links>.href:hover{
+    color:tomato;
+}
+
+
+
+
+.infoWrapper{
+    position: relative;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    cursor: pointer;
+    height: 35px;
+    transition: 0.3s ease-in-out;
+    color: #000;
+}
+.button:hover{
+  scale:1.1;
+  font-weight: 500;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 160px;
+    background-color: tomato;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+.button::before{
+    bottom: 0;
+}
+.button::before{
+    height: 0px;
+}
+.button:hover::before{
+    height: 35px;
+}
+.btnText{
+   padding: 5px;
+}
+.barsIconWrapper{
+    display: none;
+}
+.closeIconWrapper{
+    display: none;
+}
+
+
+
+.hideBarsIconWrapper{
+    display: none;
+}
+
+
+
+
+
+.leftInformation{
+    position: fixed;
+    left:10px;
+    top:45px;
+    }
+    .stickyHeader>.headerContainer>.leftInformation{
+        top: 5px;
+      }
+
+
+/* Responsive header */
+
+
+
+
+@media only screen and (max-width:1000px){
+ .href{
+    margin-left: 25px;
+    font-size: 15px;
+ }
+.button{
+    margin-right: 10px;
+}
+ .headerlogo{
+    height: 80px;
+    width: 80px;
+}
+}
+
+@media only screen and (max-width:1258px){
+ .button{
+    position: absolute;
+    top: 0px;
+    right: 0;
+ }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:924px){
+.rightInformation{
+   position: relative;
+}
+.infoWrapper{
+  position: relative;
+}
+.button{
+    position: absolute;
+    left: 0;
+    top:-80px;
+}
+.leftInformation{
+position: fixed;
+left:10px;
+top:45px;
+}
+.stickyHeader>.headerContainer>.leftInformation{
+  top: 5px;
+}
+.stickyHeader>.headerContainer>.flexedHeader>.rightInformation{
+    left: -30px;
+top: 60px;  
+}
+    .headerContainer{
+        -webkit-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+-moz-box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.49);
+    }
+    .headerlogo{
+        height: 70px;
+        width: 70px;
+    }
+    .btnText{
+        font-size: 15px;
+    }
+
+.wrap{
+    position: relative;
+}
+
+.showcloseIconWrapper{
+    display: block;
+  cursor: pointer;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.showcloseIconWrapper::after{
+    content: "";
+    outline: 2px dashed tomato;
+    outline-offset: 13px;
+    display: block;
+    transition: 0.3s ease-in-out;
+    transform: translateX(0%) scale(0);
+    position: absolute;
+    top: 18px;
+    left: 17px; 
+}
+.showcloseIconWrapper:hover{
+    scale: 1.2;
+}
+.showcloseIconWrapper:hover::after {
+    transform: translateX(0%) scale(1);
+}
+
+
+.iconsWrapper{
+    position: fixed;
+    top:65px;
+    right: 0;
+    color: #000;
+}
+
+.stickyIcons{
+  top: 25px;
+}
+    .barsIconWrapper{
+display: none;
+   
+ }
+
+.barsIconWrapper{
+      display: block;
+    cursor: pointer;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.barsIconWrapper::after{
+    content: "";
+    outline: 2px dashed tomato;
+    outline-offset: 15px;
+    display: block;
+    transition: 0.3s ease-in-out;
+    transform: translateX(0%) scale(0);
+    position: absolute;
+    top: 18px;
+    left: 17px; 
+}
+.barsIconWrapper:hover{
+    scale: 1.2;
+}
+.barsIconWrapper:hover::after {
+    transform: translateX(0%) scale(1);
+}
+.hrefsWrapper{
+    height: 0;
+    width: 0;
+}
+.links{
+    display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:726px){
+    .info{
+        font-size: 10px;
+        font-weight: 400;
+    }
+}
+
+

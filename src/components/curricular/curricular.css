@@ -1,0 +1,116 @@
+.extraActivitiesContainerWrapper{
+    overflow: hidden;
+    margin-top: 2rem;
+}
+.extraactivitiesimageWrapper{
+    width: 370px;
+    height: 370px;
+}
+.extraactivitiesImage{
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+.extraactivitiesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0px 0px 0px;
+}
+.flexedCurricular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     gap: 1rem;
+}
+.flexedCurricularSecond{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.curricularInfoText>h3{
+margin-left: 1rem;
+color: #fff;
+}
+.hostelInfo>h3{
+    margin: 1rem 0px 1rem 1rem;
+    color: #fff;
+}
+.transportationInfo>h3{
+    margin: 1rem 0px 1rem 1rem;
+    color: #fff;
+}
+.curricularInfoText{
+   background-color: #9A3B3B;
+   height: 300px;
+   width: 400px;
+   color: #fff;
+   text-align: justify;
+   padding: 1rem;
+   font-weight: 500;
+}
+.curricularTextInfo{
+    color: #fff;
+    text-align: justify;
+    font-family: Georgia;
+    padding: 1rem;
+    line-height: 20px;
+}
+.curricularTextInfo::first-letter{
+    font-size: 40px;
+}
+.hostelInfo{
+    width: 450px;   
+    background-color:#BE3144;
+}
+.transportationInfo{
+    width: 300px;
+    background-color: #872341;
+}
+.greetForCurricularContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.bigHeadingForCurricular{
+    padding: 1rem 0px 2rem 0px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108));
+    -webkit-text-fill-color: transparent; 
+    background-clip: border-box;
+    -webkit-background-clip: text; 
+}
+.bigHeadingForCurricular>.line{
+ margin-left: 6rem;
+}
+@media screen and (max-width:795px){
+    .hostelInfo{
+        width: 350px;
+    }
+    .curricularTextInfo{
+      padding: 10px 1rem 10px 1rem;
+    }
+    .flexedCurricular{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    .flexedCurricularSecond{
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:410px){
+    .curricularInfoText{
+        height: 340px;
+    }
+    .extraactivitiesimageWrapper{
+        width: 350px;
+        height: 350px;
+    }
+    .curricularInfoText{
+        width: 320px;
+    }
+}

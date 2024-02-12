@@ -1,0 +1,28 @@
+#SecondPage{
+scroll-margin: 10rem;
+}
+
+.secondpageWrapper{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.headingForSecondPage{
+  text-align: center;
+  font-size: 35px;
+  background: linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108));
+  -webkit-text-fill-color: transparent; 
+  background-clip: border-box;
+  -webkit-background-clip: text; 
+}
+
+
+
+
+
+
+
+
+
+
+

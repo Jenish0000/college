@@ -1,0 +1,39 @@
+.thirdpageDesign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem 0px 5rem 0px;
+}
+.thirdpageBigHeading{
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108));
+    -webkit-text-fill-color: transparent; 
+    background-clip: border-box;
+    -webkit-background-clip: text; 
+}
+.thirdpageTextWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.thirdpageTextWrapper>.line{
+    margin-bottom: 1rem;
+}
+.thirdpageImageWrapper{
+    height: 350px;
+    width: 350px;
+}
+.thirdpageImageWrapper>.thirdpageImage{
+    height: 100%;
+    width: 100%;
+   object-fit:cover;
+   border-radius:50%;
+   box-shadow: 10px 7px 10px 10px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width:760px){
+    .thirdpageDesign{
+        flex-wrap: wrap;
+    }
+}

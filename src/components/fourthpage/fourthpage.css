@@ -1,0 +1,78 @@
+.fourthpageDesign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  padding: 8rem;
+    height: 100%;
+}
+.fourthpageHeadingWrapper>h1{
+    font-size: 30px;
+    margin: 0px 0px 3rem 0px;
+}
+.one{
+    height: 200px;
+    width: 600px;
+}
+.two{
+    height: 200px;
+    width:600px;
+}
+.infoBoxOne{
+   height: 100%;
+   width: 100%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    background-color: #fff;
+    text-align: center;
+    color:tomato;
+    outline: 3px solid #f4f4de;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+}
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.alignmentTop{
+  position: absolute;
+  font-size: 30px;
+  top: 45px;
+}
+.fourthpagesmallHeading{
+    margin-bottom: 1rem;
+    font-size: 40px;
+}
+  .fourthpageHeadingWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108));
+    -webkit-text-fill-color: transparent; 
+    background-clip: border-box;
+    -webkit-background-clip: text; 
+  }
+
+  @media screen and (max-width:1052px){
+    .fourthpageDesign{
+        flex-wrap:wrap;
+    }
+  }
+  @media screen and (max-width:722px){
+   .one,.two{
+    height: 400px;
+    width: 300px;
+    flex-direction: column;
+   }
+  }

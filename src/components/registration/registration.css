@@ -1,0 +1,460 @@
+.bug{
+    display: none;
+}
+.popUpIconWrapped>.popUpIconNotify{
+    position: absolute;
+    top: -17px;
+    font-size: 3rem;
+    animation: ring 0.7s infinite;
+    z-index: 90;
+    color: tomato;
+}
+@keyframes ring{
+0%{
+transform: rotate(10deg);
+}
+50%{
+    transform: rotate(-40deg);
+}
+100%{
+    transform: rotate(40deg);
+}
+}
+.successMessagePopUp{
+    position:fixed;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    float: right;
+    background-color: #fff;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    margin-right: 2rem;
+    padding: 1rem;
+    border: 2px solid tomato;
+    margin-left: 10px;
+    transform: translateX(430px);
+    z-index: 10;
+}
+
+
+
+
+
+
+
+.overflowWrapped{
+    overflow-y: hidden;
+}
+
+
+
+
+
+.buttonTwo:hover{
+    scale:1.1;
+    font-weight: 500;
+  }
+  
+  .buttonTwo::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 160px;
+      background-color: tomato;
+      z-index: -1;
+      transition: 0.5s ease-in-out;
+  }
+  .buttonTwo::before{
+      bottom: 0;
+  }
+  .buttonTwo::before{
+      height: 0px;
+  }
+  .buttonTwo:hover::before{
+      height: 35px;
+  }
+.buttonTwo{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  cursor: pointer;
+  height: 35px;
+  transition: 0.3s ease-in-out;
+  color: #000;
+}
+.wrappedBackBtnToHome{
+  font-weight: bold;
+  margin:1rem 0px 0px 2rem;
+}
+.buttonTwo>.backToHome{
+    font-size: 2rem;
+}
+.registrationLogoWrapper{
+    height: 120px;
+    width: 120px;
+}
+.registrationLogo{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.registerForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+.greetRegistration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.firstRowflexed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greetTextRegistration{
+   font-weight: 400;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.registerInfoOneContent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.registerLabelGender{
+   margin-top: 2px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.registerLabel{
+    z-index: 100;
+    font-weight: 400;
+    padding: 3px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+.inputRegister{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    height:35px;
+    width: 300px;
+    outline: none;
+    border: 1px solid #f9e9d0;
+    transition: 0.3s ease-in-out;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    margin:10px 0px 2rem 20px;
+}
+
+.inputRegister:focus{
+    scale: 1.1;
+    border: 1px solid #DB8780;
+}
+.dobContent>h4{
+    margin-left: 20px;
+}
+.inputsFlexed{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 3px;
+    border-right: 1px solid #ddd;
+    padding: 13px;
+}
+.dobAndGenderContainer{
+    display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 2rem;
+}
+.dobContent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.genderContent{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mf{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.wrappedFirst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registerInfoOneContent{
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+margin-top: 2rem;
+}
+.registerInfoOneContent>.headingRegister{
+    margin-left: 37px;
+     font-size: 14px;
+     line-height: 18px;
+    font-weight: bold;
+  }
+  .fatherInfo>.headingRegister{
+    margin-left: 25px;
+    font-size: 14px;
+    line-height: 18px;
+   font-weight: bold;
+   margin-bottom: 1rem;
+  }
+  .registerInfoTwoContent{
+    border-top: 1px solid #ddd;
+    padding: 10px;
+  }
+  .motherInfo>.headingRegister{
+    margin-left: 25px;
+    font-size: 14px;
+    line-height: 18px;
+   font-weight: bold;
+   margin-bottom: 1rem;
+  }
+
+  .headingRegister>span{
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+.adressregisterContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.labelsandinputs{
+    display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+.guardiansInformation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.columnStyle{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 3px;
+}
+.fatherInfo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 2rem;
+    border-right: 1px solid #ddd;
+    padding: 15px;
+}
+.motherInfo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 2rem 0px 0px 1rem;
+}
+.inputRegisterWidth{
+    width: 360px;
+}
+.serivesSec>h3{
+    font-weight: 500;
+    text-align: center;
+    margin: 2rem 0px 1rem 0px;
+}
+.serviceContent{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+
+}
+.flexedAgree{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+.flexedAgree>h4{
+    margin-left: 10px;
+}
+.leftSec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0px 1rem 0px;
+}
+.hostelWrapper{
+    border-right: 1px solid #000;
+    padding-right: 20px;
+}
+.hostelWrapper,.busWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.terms{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: justify;
+    min-height: 70px;
+    border: 2px solid rgb(136, 136, 171);
+    padding: 1rem;
+    gap: 1rem;
+    margin: 0px 10px 0px 10px;
+}
+.submition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:2rem 0px 3rem 0px;
+}
+.submitFormBtn{
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+ color: #ddd;
+   background-color: #3a3a35;
+   box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+    cursor: pointer;
+    font-weight: bold;
+    transition:width 0.5s ease-in-out;
+}
+.submitFormBtn:hover{
+width: 100%;
+}
+input[type="checkbox"]{
+cursor: pointer;
+height: 20px;
+width: 20px;
+box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+transition: 0.3s;
+}
+input[type="checkbox"]:checked{
+scale: 1.2;
+}
+
+/* responsive style>>>>start */
+@media screen and (max-width:970px){
+.adressregisterContent{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 2rem;
+border-bottom: 1px solid #ddd;
+padding-bottom: 20px;
+margin-top: 1rem;
+}
+
+}
+
+@media screen and (max-width:785px){
+.inputRegisterWidth{
+    width: 300px;
+}
+}
+
+@media screen and (max-width:670px){
+    .fatherInfo>.headingRegister{
+        margin-bottom: 1rem;
+    }
+    .motherInfo>.headingRegister{
+        margin-bottom: 1rem;
+    }
+    .fatherInfo{
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+    }
+    .guardiansInformation{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .dobAndGenderContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .genderContent{
+        padding-top: 10px;
+        border-top: 1px solid #ddd;
+    }
+    .inputsFlexed{
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+.firstRowflexed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+}
+
+@media screen and (max-width:364px){
+.leftSec{
+    gap: 1rem;
+}
+}
+@media screen and (max-width:340px){
+    .hostelWrapper{
+        border-right: none;
+    }
+.leftSec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+}

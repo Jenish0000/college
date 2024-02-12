@@ -1,0 +1,61 @@
+.headingWrapFor{
+    text-align: center;
+    margin-top: 2rem;
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108));
+    color: #fff;
+}
+.fontWeighSmall{
+    font-weight: 500;
+}
+.parentForFacultyMembers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.facultyMembersWrapper{
+    width: 350px;
+    height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:4rem 0px 4rem 0px;
+  
+}
+.subjectHeaderwithBackground{
+    background: linear-gradient(to right, rgb(44, 62, 80), rgb(253, 116, 108));
+    -webkit-text-fill-color: transparent; 
+    background-clip: border-box;
+    -webkit-background-clip: text; 
+    font-weight: 700;
+}
+
+.styledWrapForContentFacultyMembers{
+    box-shadow:10px 10px 10px rgba(0,0,0,0.3);  
+    padding: 1rem;
+    border-left: 3px solid tomato;
+    border-right: 3px solid tomato;
+}
+.membersContentOneWrapperFacultyMembers{
+    border-top: 3px solid tomato;
+    border-top-right-radius: 20px;
+    border-left: 3px solid tomato;
+    border-top-left-radius: 10px;
+    width: 350px;
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    padding:0px 0px 1rem 0px;
+}
+.teachersNameContainerFacultyMembers{
+    padding: 1rem;
+}
+@media screen and (max-width:411px){
+    .membersContentOneWrapperFacultyMembers{
+        width: 310px;
+    }
+    .facultyMembersWrapper{
+        width: 310px;
+    }
+}
