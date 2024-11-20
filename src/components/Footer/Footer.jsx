@@ -107,6 +107,7 @@ const Footer = () => {
   <CopyrightIcon className='copyrightFooterIcon'/>
   {time.getFullYear()} Bal Kalyan Vidya Mandir, Biratnagar Nepal. All Rights Reserved
   </p>
+  <h3>Developed with ❤️ by Jenish Karki</h3>
 </div>
     </div>
       
