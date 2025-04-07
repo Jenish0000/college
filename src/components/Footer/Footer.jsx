@@ -108,7 +108,7 @@ const Footer = () => {
   {time.getFullYear()} Bal Kalyan Vidya Mandir, Biratnagar Nepal. All Rights Reserved
   </p>
        <h5>#Note : Developed by Jenish Karki</h5>
-     </br>
+  
 </div>
     </div>
       
